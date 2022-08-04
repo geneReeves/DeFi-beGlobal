@@ -1,0 +1,3076 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Factory.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "630fa2e89e78a55cee024192d82ead4d",
+      "sourceName": "contracts/Factory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IFactory.sol",
+        "./Tokens/Pair.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "Factory"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/IFactory.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "efc1fb7caa32cd58a96f715d0185d867",
+      "sourceName": "contracts/IFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IFactory"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/Pair.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "d909ae3bf12c5d5708d9ef15c21dfd90",
+      "sourceName": "contracts/Tokens/Pair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPair.sol",
+        "../Libraries/UQ112x112.sol",
+        "../Libraries/SafeMath.sol",
+        "./PancakeERC20.sol",
+        "../Libraries/Math.sol",
+        "../IFactory.sol",
+        "./IERC20.sol",
+        "../Helpers/ICallee.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "Pair"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1637597324000,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/IPair.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "2e44f515885fcec484bf8b51d51767f6",
+      "sourceName": "contracts/Tokens/IPair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPancakeERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IPair"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/UQ112x112.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "e948d85d6d06a90d88524ee42aa17e26",
+      "sourceName": "contracts/Libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/SafeMath.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "a43e65022c74604d2201ff37b1417529",
+      "sourceName": "contracts/Libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/PancakeERC20.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "400bf30c33e55c91d037c3cb4dd16b66",
+      "sourceName": "contracts/Tokens/PancakeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPancakeERC20.sol",
+        "../Libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeERC20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/Math.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "d273a0fe721a3ace97ff49231f1a7600",
+      "sourceName": "contracts/Libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/IERC20.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "6151481360a8f2d474bc7f6f2e010f39",
+      "sourceName": "contracts/Tokens/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/ICallee.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "72e7e3ea985598154b7f1ef9b4994453",
+      "sourceName": "contracts/Helpers/ICallee.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "ICallee"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/IPancakeERC20.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "e05717194cb8832b42870929027f1467",
+      "sourceName": "contracts/Tokens/IPancakeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "IPancakeERC20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultCakeWBNBLP.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "f369fa43e0edd98a290543c4adcdecf3",
+      "sourceName": "contracts/Vaults/VaultCakeWBNBLP.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Helpers/IPathFinder.sol",
+        "../Helpers/TokenAddresses.sol",
+        "../Helpers/IMinter.sol",
+        "../Modifiers/PausableUpgradeable.sol",
+        "../Modifiers/WhitelistUpgradeable.sol",
+        "../Tokens/IPair.sol",
+        "../IRouterV2.sol",
+        "./Interfaces/IStrategy.sol",
+        "./Externals/ICakeMasterChef.sol",
+        "./VaultVested.sol",
+        "./VaultDistribution.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultCakeWBNBLP"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/SafeBEP20.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "b85263a01dbfe45851f01c33ccb2b4fc",
+      "sourceName": "contracts/Libraries/SafeBEP20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol",
+        "./Address.sol",
+        "../Tokens/IBEP20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeBEP20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/IPathFinder.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "8ad09214bc65d316a150fc87a69d12e6",
+      "sourceName": "contracts/Helpers/IPathFinder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Modifiers/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IPathFinder"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/TokenAddresses.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "f5675816af7a0499a288caaa18e155ac",
+      "sourceName": "contracts/Helpers/TokenAddresses.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Modifiers/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "TokenAddresses"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/IMinter.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "451f428452fc8ae7cbb475e997e4688a",
+      "sourceName": "contracts/Helpers/IMinter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IMinter"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/PausableUpgradeable.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "d4651173ad78452d555ff185ace287e3",
+      "sourceName": "contracts/Modifiers/PausableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "PausableUpgradeable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/WhitelistUpgradeable.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "45a38afc7117f14c26ecb9870ae8098b",
+      "sourceName": "contracts/Modifiers/WhitelistUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "WhitelistUpgradeable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/IRouterV2.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "8cdb04ffd24d590e1f174f7093ed74c8",
+      "sourceName": "contracts/IRouterV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IRouterV1.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IRouterV2"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Interfaces/IStrategy.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "3be1dd22deea1c0ada853ae898f9e525",
+      "sourceName": "contracts/Vaults/Interfaces/IStrategy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IStrategy"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Externals/ICakeMasterChef.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "70ff98e8250932cfcaa2eba21cf690bc",
+      "sourceName": "contracts/Vaults/Externals/ICakeMasterChef.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "ICakeMasterChef"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultVested.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "2e178d91928a3346f789feb3a1ecf55d",
+      "sourceName": "contracts/Vaults/VaultVested.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Modifiers/ReentrancyGuard.sol",
+        "../Modifiers/DepositoryRestriction.sol",
+        "../Modifiers/RewarderRestriction.sol",
+        "../IGlobalMasterChef.sol",
+        "./VaultLocked.sol",
+        "./Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultVested"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultDistribution.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "9834d77092d4267034b73d17a0832bfc",
+      "sourceName": "contracts/Vaults/VaultDistribution.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Modifiers/Ownable.sol",
+        "../Modifiers/DepositoryRestriction.sol",
+        "./Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultDistribution"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/Address.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "a188c43e73add5f36ca46741d4e15b1d",
+      "sourceName": "contracts/Libraries/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/IBEP20.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "0272debce6c5e92588d3fae9bb20c56f",
+      "sourceName": "contracts/Tokens/IBEP20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "IBEP20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/Ownable.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "605e065f917be7fc79bb3c26af92d6dd",
+      "sourceName": "contracts/Modifiers/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "../Helpers/Context.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/Context.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "04cfa1312fbffe0178b016ee250acf5a",
+      "sourceName": "contracts/Helpers/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "28d96204afafe6d3f9ee0c8a1d4249c7",
+      "sourceName": "contracts/Modifiers/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Helpers/ContextUpgradeable.sol",
+        "../Modifiers/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/ContextUpgradeable.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "04891c626651d2caa5e2c97c6709b6e2",
+      "sourceName": "contracts/Helpers/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Modifiers/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/Initializable.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "d5261c098dcfdfd5ade0c08f753d11fb",
+      "sourceName": "contracts/Modifiers/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/IRouterV1.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "ad050090a548d5bbc69f75374eb7d640",
+      "sourceName": "contracts/IRouterV1.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IRouterV1"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/ReentrancyGuard.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "85da8a1de05b244701cd8c2400c1e8b4",
+      "sourceName": "contracts/Modifiers/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/DepositoryRestriction.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "e839a161b8e48cd3c38fcda3e037e942",
+      "sourceName": "contracts/Modifiers/DepositoryRestriction.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "DepositoryRestriction"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/RewarderRestriction.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "73ffb9f1ef87d8934b067ed83bdd93cf",
+      "sourceName": "contracts/Modifiers/RewarderRestriction.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "RewarderRestriction"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/IGlobalMasterChef.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "7bececa3639465758561c62ad68179b0",
+      "sourceName": "contracts/IGlobalMasterChef.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Tokens/IBEP20.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IGlobalMasterChef"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultLocked.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "8d786dcd464ac7ec62206f84306485ef",
+      "sourceName": "contracts/Vaults/VaultLocked.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Modifiers/Ownable.sol",
+        "../Modifiers/ReentrancyGuard.sol",
+        "../Modifiers/DepositoryRestriction.sol",
+        "../Modifiers/RewarderRestriction.sol",
+        "../IGlobalMasterChef.sol",
+        "./Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultLocked"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Interfaces/IDistributable.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "2aeefb60fda45eb233de8b5f0c4a2af7",
+      "sourceName": "contracts/Vaults/Interfaces/IDistributable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IDistributable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultStakedToGlobal.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "d85a2fa6a771fbcecf3ae11384677b58",
+      "sourceName": "contracts/Vaults/VaultStakedToGlobal.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Modifiers/ReentrancyGuard.sol",
+        "../Modifiers/RewarderRestriction.sol",
+        "../IGlobalMasterChef.sol",
+        "../IRouterV2.sol",
+        "./Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultStakedToGlobal"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultCake.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "7b655725286ca8ba8e9595b7d2ebce4a",
+      "sourceName": "contracts/Vaults/VaultCake.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Helpers/TokenAddresses.sol",
+        "../Helpers/IPathFinder.sol",
+        "../Helpers/IMinter.sol",
+        "../Modifiers/PausableUpgradeable.sol",
+        "../Modifiers/WhitelistUpgradeable.sol",
+        "../IRouterV2.sol",
+        "./VaultVested.sol",
+        "./VaultDistribution.sol",
+        "./Externals/ICakeMasterChef.sol",
+        "./Interfaces/IStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultCake"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/CakeMasterChefMock.sol": {
+      "lastModificationDate": 1637601360000,
+      "contentHash": "77440c2401fe2d41c53f3f6f38dee6f6",
+      "sourceName": "contracts/Mocks/CakeMasterChefMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Tokens/BEP20.sol",
+        "../Libraries/SafeMath.sol",
+        "../Libraries/SafeBEP20.sol",
+        "../Vaults/Externals/ICakeMasterChef.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "CakeMasterChefMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/BEP20.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "710d7677351b63c4c27d343cd8ce81f7",
+      "sourceName": "contracts/Tokens/BEP20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Modifiers/Ownable.sol",
+        "../Helpers/Context.sol",
+        "../Modifiers/DevPower.sol",
+        "../Libraries/Address.sol",
+        "../Libraries/SafeMath.sol",
+        "./IBEP20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BEP20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/DevPower.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "1c87d67d9e8c4bac06e40a136ce60e37",
+      "sourceName": "contracts/Modifiers/DevPower.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Helpers/Context.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DevPower"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultStaked.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "8918a9c5bac78091dbece997775fee61",
+      "sourceName": "contracts/Vaults/VaultStaked.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Modifiers/ReentrancyGuard.sol",
+        "../Modifiers/RewarderRestriction.sol",
+        "../IGlobalMasterChef.sol",
+        "./Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultStaked"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultLockedManual.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "407d9a6fe80cc757baf38fd7b2222216",
+      "sourceName": "contracts/Vaults/VaultLockedManual.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Modifiers/Ownable.sol",
+        "../Modifiers/ReentrancyGuard.sol",
+        "../Modifiers/DepositoryRestriction.sol",
+        "../Modifiers/RewarderRestriction.sol",
+        "../IGlobalMasterChef.sol",
+        "./Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultLockedManual"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultLockedLPs.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "6a1f87037a6b0863a5e8a7f68a4ca535",
+      "sourceName": "contracts/Vaults/VaultLockedLPs.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/SafeBEP20.sol",
+        "../Libraries/Math.sol",
+        "../Modifiers/Ownable.sol",
+        "../Modifiers/Trusted.sol",
+        "../Modifiers/ReentrancyGuard.sol",
+        "../IGlobalMasterChef.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "VaultLockedLPs"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Modifiers/Trusted.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "de32e9edd0b0f051e3999b95143f5e1b",
+      "sourceName": "contracts/Modifiers/Trusted.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol",
+        "../Helpers/Context.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "Trusted"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/PresaleNewCap.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "0bcc8851d410f3887328fd66fd49772f",
+      "sourceName": "contracts/PresaleNewCap.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Modifiers/Ownable.sol",
+        "./Modifiers/Trusted.sol",
+        "./Libraries/SafeMath.sol",
+        "./Tokens/IBEP20.sol",
+        "./Libraries/SafeBEP20.sol",
+        "./Tokens/NativeToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PresaleNewCap"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/NativeToken.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "2656a3cab2daee03e4c813f894b447b4",
+      "sourceName": "contracts/Tokens/NativeToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Modifiers/Ownable.sol",
+        "../Modifiers/DevPower.sol",
+        "../Libraries/SafeMath.sol",
+        "../Libraries/Address.sol",
+        "./BEP20.sol",
+        "./IBEP20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NativeToken"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Presale.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "82c78d67bb7e38710ccbe1a4d3e613ee",
+      "sourceName": "contracts/Presale.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Modifiers/Ownable.sol",
+        "./Modifiers/Trusted.sol",
+        "./Libraries/SafeMath.sol",
+        "./Tokens/IBEP20.sol",
+        "./Libraries/SafeBEP20.sol",
+        "./Tokens/NativeToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Presale"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/SmartChefFactory.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "524136e544bda85833f2454f3cb63119",
+      "sourceName": "contracts/SmartChefFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Tokens/IBEP20.sol",
+        "./SmartChef.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SmartChefFactory"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/SmartChef.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "bb3831f0807b18d738bdda8cfd2f93df",
+      "sourceName": "contracts/SmartChef.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Modifiers/Ownable.sol",
+        "./Modifiers/ReentrancyGuard.sol",
+        "./Libraries/SafeBEP20.sol",
+        "./Libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SmartChef"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/SwapFeeReward.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "4902a229bd27757111a32e8e9f7eb86d",
+      "sourceName": "contracts/SwapFeeReward.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Modifiers/Ownable.sol",
+        "./Helpers/IOracle.sol",
+        "./Libraries/SafeMath.sol",
+        "./Libraries/EnumerableSet.sol",
+        "./Tokens/IPair.sol",
+        "./IFactory.sol",
+        "./Helpers/IMinter.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "SwapFeeReward"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/IOracle.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "256a4ef166006177d5e0356dfa0439d9",
+      "sourceName": "contracts/Helpers/IOracle.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IOracle"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/EnumerableSet.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "991ddae167c1f260351620858448c9a7",
+      "sourceName": "contracts/Libraries/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/MinterVested.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "b26a478af163762bf72aa6fad7d6b888",
+      "sourceName": "contracts/MinterVested.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Modifiers/Ownable.sol",
+        "./Helpers/IMinter.sol",
+        "./Tokens/IBEP20.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "MinterVested"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Router.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "dcee934ab69fefd6d174c029c6831a07",
+      "sourceName": "contracts/Router.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Libraries/SafeMath.sol",
+        "./Libraries/PancakeLibrary.sol",
+        "./Libraries/TransferHelper.sol",
+        "./Modifiers/Ownable.sol",
+        "./Tokens/IPair.sol",
+        "./Tokens/IWETH.sol",
+        "./Tokens/IERC20.sol",
+        "./IRouterV2.sol",
+        "./IFactory.sol",
+        "./ISwapFeeReward.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "Router"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/PancakeLibrary.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "7d308dc518c128570adee6bec867b8c3",
+      "sourceName": "contracts/Libraries/PancakeLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol",
+        "../Tokens/IPair.sol",
+        "../IFactory.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "PancakeLibrary"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/TransferHelper.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "3e9ebcf33ec596b64d0c8a5f27b1a5c6",
+      "sourceName": "contracts/Libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Tokens/IWETH.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "c63c41bb28da5eb823432d539754c569",
+      "sourceName": "contracts/Tokens/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/ISwapFeeReward.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "a2fce39814a8641f2cfd5a089104e0e6",
+      "sourceName": "contracts/ISwapFeeReward.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.12"
+      ],
+      "artifacts": [
+        "ISwapFeeReward"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/MasterChefInternal.sol": {
+      "lastModificationDate": 1637599722000,
+      "contentHash": "80c5b58fcb9acfe2bd7041a44d0c0288",
+      "sourceName": "contracts/MasterChefInternal.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Tokens/IBEP20.sol",
+        "./Helpers/TokenAddresses.sol",
+        "./Helpers/IPathFinder.sol",
+        "./Tokens/IPair.sol",
+        "./Modifiers/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MasterChefInternal"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/PathFinderMock.sol": {
+      "lastModificationDate": 1637601044000,
+      "contentHash": "a3fd889e9840d380f5b2d052df942df7",
+      "sourceName": "contracts/Mocks/PathFinderMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Helpers/IPathFinder.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "PathFinderMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/MasterChef.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "3a4b0078442171e659ecf2708b2dd2d3",
+      "sourceName": "contracts/MasterChef.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Helpers/Context.sol",
+        "./Helpers/IMinter.sol",
+        "./Helpers/TokenAddresses.sol",
+        "./Helpers/IPathFinder.sol",
+        "./Helpers/IMintNotifier.sol",
+        "./Modifiers/Ownable.sol",
+        "./Modifiers/Trusted.sol",
+        "./Modifiers/DevPower.sol",
+        "./Modifiers/ReentrancyGuard.sol",
+        "./Libraries/Address.sol",
+        "./Libraries/SafeBEP20.sol",
+        "./Libraries/SafeMath.sol",
+        "./Tokens/IBEP20.sol",
+        "./Tokens/BEP20.sol",
+        "./Tokens/NativeToken.sol",
+        "./Tokens/IPair.sol",
+        "./IRouterV2.sol",
+        "./MasterChefInternal.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MasterChef"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/IMintNotifier.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "e945debff9f3be37fbced8be48596349",
+      "sourceName": "contracts/Helpers/IMintNotifier.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IMintNotifier"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/RouterMock.sol": {
+      "lastModificationDate": 1637601312000,
+      "contentHash": "d8ece7647d7f26eb4b9246f72b283df0",
+      "sourceName": "contracts/Mocks/RouterMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "../IRouterV2.sol",
+        "../Tokens/IBEP20.sol",
+        "../Tokens/BEP20.sol",
+        "../Libraries/SafeBEP20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "RouterMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/GlobalMasterChefMock.sol": {
+      "lastModificationDate": 1637601352000,
+      "contentHash": "121d6c0da72f880d322d0f088f52ad0e",
+      "sourceName": "contracts/Mocks/GlobalMasterChefMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Tokens/BEP20.sol",
+        "../Libraries/SafeMath.sol",
+        "../Libraries/SafeBEP20.sol",
+        "../IGlobalMasterChef.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "GlobalMasterChefMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/CakeMasterChefLPMock.sol": {
+      "lastModificationDate": 1637601374000,
+      "contentHash": "ee417bfe1c8179d6019ea867c12436c0",
+      "sourceName": "contracts/Mocks/CakeMasterChefLPMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Tokens/BEP20.sol",
+        "../Libraries/SafeMath.sol",
+        "../Libraries/SafeBEP20.sol",
+        "../Vaults/Externals/ICakeMasterChef.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "CakeMasterChefLPMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/BunnyPoolMock.sol": {
+      "lastModificationDate": 1637601382000,
+      "contentHash": "9c3ec855b4e7a9dc5094a6ef2b4b65a5",
+      "sourceName": "contracts/Mocks/BunnyPoolMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Tokens/BEP20.sol",
+        "../Libraries/SafeMath.sol",
+        "../Libraries/SafeBEP20.sol",
+        "../Vaults/Externals/IBunnyPoolStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "BunnyPoolMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Externals/IBunnyPoolStrategy.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "9c513a84cdeee942b6b13a5bdc891e06",
+      "sourceName": "contracts/Vaults/Externals/IBunnyPoolStrategy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IBunnyPoolStrategy"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/MintNotifier.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "06c367c2018a0cead3c50549350c6a69",
+      "sourceName": "contracts/Helpers/MintNotifier.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IMintNotifier.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "MintNotifier"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/PathFinder.sol": {
+      "lastModificationDate": 1637599723000,
+      "contentHash": "29c11950e5674f16e8adec04eb2f9e68",
+      "sourceName": "contracts/Helpers/PathFinder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Tokens/IPair.sol",
+        "./IPathFinder.sol",
+        "../Modifiers/Ownable.sol",
+        "./TokenAddresses.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "PathFinder"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/GlobalOracleLibrary.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "e73b710a9f33aab6166e17b9a914078a",
+      "sourceName": "contracts/Libraries/GlobalOracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FixedPoint.sol",
+        "../Tokens/IPair.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "GlobalOracleLibrary"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Libraries/FixedPoint.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "14dc285334610f092ed03dfb13b49f54",
+      "sourceName": "contracts/Libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Helpers/Oracle.sol": {
+      "lastModificationDate": 1637295469000,
+      "contentHash": "bf435421e818323f06b103de461e8830",
+      "sourceName": "contracts/Helpers/Oracle.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Libraries/FixedPoint.sol",
+        "../Libraries/SafeMath.sol",
+        "../Libraries/GlobalOracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "Oracle"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Mocks/BeneficiaryMock.sol": {
+      "lastModificationDate": 1637601390000,
+      "contentHash": "65b9da47ff56c60faf76792f3b79bd7b",
+      "sourceName": "contracts/Mocks/BeneficiaryMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Vaults/Interfaces/IDistributable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "BeneficiaryMock"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Externals/IBunnyChef.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "fd38d46671d8360aa42310a49cf6730a",
+      "sourceName": "contracts/Vaults/Externals/IBunnyChef.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBunnyChef"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Externals/IBunnyMinter.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "b9a8bf84298e892649c6670c70938a3a",
+      "sourceName": "contracts/Vaults/Externals/IBunnyMinter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IBunnyMinter"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/Externals/IBunnyMinterV2.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "3cd0e45c627bc7bbcd3338ac14058339",
+      "sourceName": "contracts/Vaults/Externals/IBunnyMinterV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IBunnyMinterV2"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects1/global-sc/contracts/Vaults/VaultBunny.sol": {
+      "lastModificationDate": 1637599721000,
+      "contentHash": "f4f4045ac620972e6dd4930d9d5a616e",
+      "sourceName": "contracts/Vaults/VaultBunny.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": []
+    }
+  }
+}

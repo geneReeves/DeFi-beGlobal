@@ -1,0 +1,29 @@
+ROUTER, FACTORY AND PAIR NOTES
+
+-The deployment should be made by an owner account, as any of the other contracts. And should follow next steps:
+	-deploy Factory from owner, with owner address as param. This will set the feeToSetter param to later change the feeto address
+		Factory.deploy(owner.address)
+	-deploy Weth
+	-deploy Router from owner address, with factory and weth as params.
+		Router.deploy(factory.address, weth.address);
+	-deploy the needed tokens
+	-set feeto address from the contract deployer, otherwise it stays at addr 0x0 and we get no fees!
+
+-Every time we create a new pair in Router, there are some funds that are blocked and can't be removed. This qty is minimum, but check the tests
+-We need to set up the fee too from the factory, otherwise the fees will not be sent anywhere!
+	factory.connect(owner).setFeeTo(feetoo.address);
+-The process to get the fees is basically from each Pair._mintFee function.
+	*The first time we addliquidity we won't send any fees to the feeto addres cause _kLast == 0
+	*After this, we will get
+-Note that before addingliquidity we should get the approve of all tokens involved.
+	await token.connect(feetoo).approve(router.address, 50000);
+-Before removing liquidity we should also get the approve for the LP pair created!!
+	await pair.connect(feetoo).approve(router.address, 50000);
+
+
+Notes:
+He fet tests a les pools de les fees del router, el tema del div(2) o div(3) que vaig comentar ahir.
+Amb un div(2) rebem totes les fees a la direcció de feetoo.
+Tambe he testejat el inbalance de les pools al limit, i sempre podem recuperar els LPs que generem
+com a fees de la pool sense afectar la pool. O sigui, que la pool mai es queda sense pasta,
+les fees que generem semblen correspondre amb els diners que deixem a la pool. En resum, sembla que esta tot correcte :)

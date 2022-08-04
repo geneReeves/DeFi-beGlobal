@@ -1,0 +1,159 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PathFinderMock",
+  "sourceName": "contracts/Mocks/PathFinderMock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenRoute",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_directBNB",
+          "type": "bool"
+        }
+      ],
+      "name": "addRouteInfo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "addRouteInfoDirect",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenRoute",
+          "type": "address"
+        }
+      ],
+      "name": "addRouteInfoRoute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "findPath",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "getRouteInfoDirectBNB",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "getRouteInfoTokenRoute",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "isTokenConnected",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "removeRouteInfo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506102e4806100206000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c806393ee23031161005b57806393ee230314610131578063a1c421cd14610169578063c7342575146101e7578063cde83295146100c757610088565b80630f990d001461008d5780631fd88557146100c757806380cc9290146100ef5780638c0077d11461008d575b600080fd5b6100b3600480360360208110156100a357600080fd5b50356001600160a01b0316610215565b604080519115158252519081900360200190f35b6100ed600480360360208110156100dd57600080fd5b50356001600160a01b031661021b565b005b6101156004803603602081101561010557600080fd5b50356001600160a01b031661021e565b604080516001600160a01b039092168252519081900360200190f35b6100ed6004803603606081101561014757600080fd5b506001600160a01b038135811691602081013590911690604001351515610223565b6101976004803603604081101561017f57600080fd5b506001600160a01b0381358116916020013516610228565b60408051602080825283518183015283519192839290830191858101910280838360005b838110156101d35781810151838201526020016101bb565b505050509050019250505060405180910390f35b6100ed600480360360408110156101fd57600080fd5b506001600160a01b03813581169160200135166102aa565b50600190565b50565b503090565b505050565b6040805160028082526060808301845292602083019080368337019050509050828160008151811061025657fe5b60200260200101906001600160a01b031690816001600160a01b031681525050818160018151811061028457fe5b60200260200101906001600160a01b031690816001600160a01b03168152505092915050565b505056fea2646970667358221220983abed67c75a8c9ea9106a71116939df256cdfcd3296aa6461aca789ed877c164736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c806393ee23031161005b57806393ee230314610131578063a1c421cd14610169578063c7342575146101e7578063cde83295146100c757610088565b80630f990d001461008d5780631fd88557146100c757806380cc9290146100ef5780638c0077d11461008d575b600080fd5b6100b3600480360360208110156100a357600080fd5b50356001600160a01b0316610215565b604080519115158252519081900360200190f35b6100ed600480360360208110156100dd57600080fd5b50356001600160a01b031661021b565b005b6101156004803603602081101561010557600080fd5b50356001600160a01b031661021e565b604080516001600160a01b039092168252519081900360200190f35b6100ed6004803603606081101561014757600080fd5b506001600160a01b038135811691602081013590911690604001351515610223565b6101976004803603604081101561017f57600080fd5b506001600160a01b0381358116916020013516610228565b60408051602080825283518183015283519192839290830191858101910280838360005b838110156101d35781810151838201526020016101bb565b505050509050019250505060405180910390f35b6100ed600480360360408110156101fd57600080fd5b506001600160a01b03813581169160200135166102aa565b50600190565b50565b503090565b505050565b6040805160028082526060808301845292602083019080368337019050509050828160008151811061025657fe5b60200260200101906001600160a01b031690816001600160a01b031681525050818160018151811061028457fe5b60200260200101906001600160a01b031690816001600160a01b03168152505092915050565b505056fea2646970667358221220983abed67c75a8c9ea9106a71116939df256cdfcd3296aa6461aca789ed877c164736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
